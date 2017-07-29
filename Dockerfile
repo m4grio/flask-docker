@@ -22,6 +22,8 @@ RUN \
     set -xe ;\
     pip install flask==${FLASK_VERSION}
 
+WORKDIR /opt/app
+
 EXPOSE 5000:5000
 
 CMD ["flask"]
