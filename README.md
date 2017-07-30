@@ -32,5 +32,10 @@ $ flask run
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ```
 
+```shell
+$ curl 0.0.0.0:5000
+Hello, Cat!
+```
+
 ## Author
 - Mario Álvarez <ahoy@m4grio.me>
