@@ -18,6 +18,7 @@ RUN \
     set -xe ;\
     pip install flask==${flask_version}
 
+RUN mkdir -vp /opt/app
 WORKDIR /opt/app
 
 EXPOSE 5000:5000
