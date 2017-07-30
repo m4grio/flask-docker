@@ -1,7 +1,10 @@
 version: '3'
 services:
   flask:
-    build: .
+    build:
+      context: .
+      args:
+        flask_version: 0.12.2
     volumes:
       - ./:/opt/app
     ports:

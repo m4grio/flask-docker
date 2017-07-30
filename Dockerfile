@@ -1,8 +1,6 @@
 FROM alpine:3.6
 MAINTAINER Mario Alvarez <ahoy@m4grio.me>
 
-ENV FLASK_VERSION 0.12.2
-
 # Python and dependences
 RUN \
     set -xe ;\
@@ -15,9 +13,10 @@ RUN \
     python -m ensurepip
 
 # Install Flask
+ARG flask_version
 RUN \
     set -xe ;\
-    pip install flask==${FLASK_VERSION}
+    pip install flask==${flask_version}
 
 WORKDIR /opt/app
 
