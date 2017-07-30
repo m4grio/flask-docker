@@ -1,21 +1,18 @@
-FROM centos:7
+FROM alpine:3.6
 MAINTAINER Mario Alvarez <ahoy@m4grio.me>
 
 ENV FLASK_VERSION 0.12.2
 
-# Python dependences
+# Python and dependences
 RUN \
     set -xe ;\
-    yum install epel-release -y ;\
-    yum update -y
+    apk add --no-cache \
+        python
 
 # Install pip
 RUN \
     set -xe ;\
-    yum install -y \
-        python-pip \
-    ;\
-    pip install --upgrade pip
+    python -m ensurepip
 
 # Install Flask
 RUN \
