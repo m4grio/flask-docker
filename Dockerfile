@@ -23,4 +23,7 @@ WORKDIR /opt/app
 
 EXPOSE 5000:5000
 
+COPY entrypoint.sh /bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
+
 CMD ["flask"]
