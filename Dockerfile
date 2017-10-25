@@ -1,5 +1,5 @@
 FROM alpine:3.6
-MAINTAINER Mario Alvarez <ahoy@m4grio.me>
+LABEL maintainer="ahoy@m4grio.me"
 
 # Python and dependences
 RUN \
