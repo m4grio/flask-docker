@@ -1,6 +1,8 @@
 FROM alpine:3.6
 LABEL maintainer="ahoy@m4grio.me"
 
+ENV PYTHON_VERSION 2.7.13
+
 # Python and dependences
 RUN \
     set -xe ;\
