@@ -17,7 +17,7 @@ Just use `flask` as you normally do.
 
 ### Configuration
 
-The script that invokes Flask within the container will look for a file called `.env` in the same path you execute Flask in. Refer to the [examples](https://github.com/m4grio/flask-docker/tree/master/examples).
+The script that invokes Flask within the container will look for a file called `.env` in the same path you execute Flask in. Refer to the [example](https://github.com/m4grio/flask-docker/tree/master/example).
 
 ```shell
 $ ls -a
