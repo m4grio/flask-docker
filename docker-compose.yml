@@ -5,6 +5,7 @@ services:
       context: .
       args:
         flask_version: 0.12.2
+    image: flaskdocker_flask
     volumes:
       - ./:/opt/app
     ports:
